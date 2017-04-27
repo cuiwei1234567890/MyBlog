@@ -1,5 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <title>我的第一个博客</title>
-  这是内容
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="stylesheet" href="https://typo.sofi.sh/typo.css">
+  <style>
+    body{padding:20px}
+  </style>
+</head>
+<body>
+  <div id="content">
+   # myblog
+
+## 我的第一篇博客
+
+**cw**
+
+[baidu](http:www.baidu.com)
+
+__ 不要相信网上的名人名言 --鲁迅 __
+
+  大家好 我今天学会markdown了
+
+<img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2300875363,445064071&fm=5" alt="" width="300">
+  </div>
+  <script>
+    var content = document.getElementById('content')
+    var markdown = content.innerHTML
+    var html = marked(markdown)
+    content.innerHTML = html
+  </script>
+</body>
 </html>
